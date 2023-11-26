@@ -6,5 +6,10 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
+@app.route('/name',methods=['GET','POST'])
+def hi():
+    return('how are you')
+
+
 if __name__ =='__main__':
     app.run()
