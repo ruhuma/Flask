@@ -7,8 +7,8 @@ def hello():
     return render_template('index.html')
 
 @app.route('/name',methods=['GET','POST'])
-def hi():
-    return('how are you')
+def predict():
+    return render_template('name.html')
 
 
 if __name__ =='__main__':
